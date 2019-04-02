@@ -41,4 +41,23 @@ public class StereoTest {
         assertEquals("press one of the buttons to choose a song", stereo.playCDplayer());
     }
 
+    @Test
+    public void hasVolume() {
+        assertEquals(0, stereo.currentVolume());
+    }
+
+    @Test
+    public void canTurnVolumeUp() {
+        stereo.volumeUp();
+        stereo.volumeUp();
+        assertEquals(2, stereo.currentVolume());
+    }
+
+    @Test
+    public void canTurnVolumeDown() {
+        stereo.volumeUp();
+        stereo.volumeDown();
+        assertEquals(0, stereo.currentVolume());
+    }
+
 }

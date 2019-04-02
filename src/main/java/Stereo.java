@@ -3,11 +3,13 @@ public class Stereo {
     private String name;
     private Radio radio;
     private CDplayer cdplayer;
+    private int volume;
 
     public Stereo(String name, Radio radio, CDplayer cdplayer) {
         this.name = name;
         this.cdplayer = cdplayer;
         this.radio = radio;
+        this.volume = 0;
     }
 
     public String getName() {
@@ -30,4 +32,17 @@ public class Stereo {
         return cdplayer.play();
     }
 
+    public void volumeUp() {
+        this.volume += 1;
+    }
+
+    public void volumeDown() {
+        if (this.volume > 0) {
+            this.volume -= 1;
+        }
+    }
+
+    public int currentVolume() {
+       return this.volume;
+    }
 }
