@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import Components.Radio;
+
 import static org.junit.Assert.assertEquals;
 
 public class RadioTest {

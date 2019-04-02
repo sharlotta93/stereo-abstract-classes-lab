@@ -1,3 +1,7 @@
+package StereoStuff;
+
+import Components.*;
+
 public class Stereo {
 
     private String name;
@@ -33,7 +37,9 @@ public class Stereo {
     }
 
     public void volumeUp() {
-        this.volume += 1;
+        if (this.volume < 10) {
+            this.volume += 1;
+        }
     }
 
     public void volumeDown() {

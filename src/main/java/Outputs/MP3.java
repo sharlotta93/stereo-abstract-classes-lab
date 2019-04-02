@@ -1,3 +1,8 @@
+package Outputs;
+
+import Components.*;
+import StereoStuff.*;
+
 public class MP3 extends Component implements IPlay, IConnect {
 
     public MP3(String make, String model) {

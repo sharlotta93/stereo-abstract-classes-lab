@@ -1,3 +1,7 @@
+package Components;
+
+import Components.Component;
+
 public class CDplayer extends Component implements IPlay {
 
     public CDplayer(String make, String model) {

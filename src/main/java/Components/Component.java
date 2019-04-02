@@ -1,3 +1,5 @@
+package Components;
+
 public abstract class Component {
 
     private String make;

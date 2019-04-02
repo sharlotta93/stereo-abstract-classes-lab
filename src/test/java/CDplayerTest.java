@@ -1,5 +1,8 @@
+import Components.CDplayer;
 import org.junit.Before;
 import org.junit.Test;
+
+import Components.CDplayer;
 
 import static org.junit.Assert.assertEquals;
 

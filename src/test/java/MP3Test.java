@@ -1,5 +1,10 @@
+import Components.CDplayer;
+import Outputs.MP3;
+import StereoStuff.Stereo;
 import org.junit.Before;
 import org.junit.Test;
+
+import Components.*;
 
 import static org.junit.Assert.assertEquals;
 
